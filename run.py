@@ -153,13 +153,15 @@ def run_hmm(directory, cpu_count, database_path, output, E, dome, visualization)
                                 conflict_bed_dict[gene_id] = []
                             conflict_bed_dict[gene_id].append(f'{int(ali_from) - 1}\t{ali_to}') 
 
+                            # Normalize gene_id to consider sequences with the same base name as one
+                            normalized_gene_id = gene_id.split('_')[0]
                             # Create Table, Keys = species_name : Values = counts
                             if species_name not in table_count_dict:
                                 table_count_dict[species_name] = {}
                             if domain_id not in table_count_dict[species_name]:
-                                table_count_dict[species_name][domain_id] = 1
-                            else:
-                                table_count_dict[species_name][domain_id] += 1
+                                table_count_dict[species_name][domain_id] = set()
+                            # Add the normalized gene_id to the set
+                            table_count_dict[species_name][domain_id].add(normalized_gene_id) 
 
                 # Write '{species}_{domain}.list' files
                 for k, v in list_file_dict.items():
@@ -209,11 +211,12 @@ def run_hmm(directory, cpu_count, database_path, output, E, dome, visualization)
                 writing_table_file.write(k + '\t'.join([''] + list(v.keys())) + '\n')
         
                 # Write species name and counts
-                writing_table_file.write(f'{k}\t')
-                for count in v.values():
-                    writing_table_file.write(f'{count}\t')
+                writing_table_file.write(f'{species_name}\t')
+                for domain_id, gene_ids in table_count_dict[species_name].items():
+                    unique_count = len(gene_ids)  # Count of unique gene IDs
+                    writing_table_file.write(f'{unique_count}\t')
                 writing_table_file.write('\n')
-
+                
         # Create Fasta files using '.list' against 'clean.fasta'
         for list_file in os.listdir(species_folder_path):
             if list_file.endswith('.list'):

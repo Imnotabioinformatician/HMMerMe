@@ -1,0 +1,25 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Bpli5357             -             73 AdipokineticHormone  -             72   1.1e-08   36.3   0.0   1   1   4.6e-13   1.2e-08   36.2   0.0     4    46     8    50     5    71 0.86 -
+Bpli20339            -            156 AllatostatinB        -            185   0.00017   22.8   0.0   1   1   8.1e-09   0.00021   22.5   0.0    14   131     9   132     1   154 0.55 -
+Bpli3895             -            136 FMRFamide            -            289   1.7e-08   35.9   0.5   1   1   7.7e-13     2e-08   35.6   0.5    10   152     7   135     1   136 0.63 -
+Bpli21098            -            401 NUCB1                -            567  2.6e-135  454.0  43.8   1   1  8.7e-139  3.5e-135  453.6  43.8     5   405     2   397     1   401 0.88 -
+Bpli42610            -            164 NUCB1                -            567   1.2e-05   26.0   1.5   1   1     3e-09   1.2e-05   26.0   1.5   228   313    73   161    63   164 0.73 -
+Bpli27488            -             80 NUCB1                -            567   0.00021   21.9   2.7   1   1   5.6e-08   0.00023   21.8   2.7   244   313     1    64     1    77 0.80 -
+Bpli13883            -            137 NeuropeptideF        -             92   2.9e-14   54.5   0.0   1   1   3.1e-18     4e-14   54.0   0.0     6    72    19    92    14   107 0.75 -
+Bpli4070             -            115 NeuropeptideF        -             92   1.5e-11   45.7   0.0   1   1   1.3e-15   1.7e-11   45.6   0.0     8    71     8    74     1    92 0.69 -
+Bpli13495            -             91 NeuropeptideF        -             92     6e-09   37.4   0.0   1   1   5.1e-13   6.7e-09   37.3   0.0     8    66    14    71     4    88 0.80 -
+Bpli47440            -            121 ACP                  -             84   7.1e-05   24.2   0.0   1   1   8.2e-09   0.00021   22.7   0.0    11    42    13    46     3    61 0.64 -
+Bpli51085            -            157 Insulinlike          -            137    0.0012   20.7   3.1   1   1   4.5e-08    0.0012   20.7   3.1   112   134   134   156   114   157 0.88 -
+Bpli49535            -            180 Vasopressin          -            137   3.1e-35  122.7  15.9   1   1   7.9e-40   4.1e-35  122.3  15.9     8   134    20   146    13   149 0.86 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /home/layg1e23/Documents/GitHub/HMMerMe/Database_hmm/database
+# Target file:     /home/layg1e23/Documents/GitHub/HMMerMe/Input/B_plicatilis_clean.fasta
+# Option settings: hmmsearch --domtblout /home/layg1e23/Documents/GitHub/HMMerMe/Rotifers_Priapulids_1e2_1e6/B_plicatilis/B_plicatilis.hmm_results --noali -E 1e-2 --domE 1e-7 --cpu 2 /home/layg1e23/Documents/GitHub/HMMerMe/Database_hmm/database /home/layg1e23/Documents/GitHub/HMMerMe/Input/B_plicatilis_clean.fasta 
+# Current dir:     /home/layg1e23/Documents/GitHub/HMMerMe
+# Date:            Fri Apr  5 16:20:41 2024
+# [ok]

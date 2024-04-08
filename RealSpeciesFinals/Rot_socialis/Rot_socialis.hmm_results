@@ -1,0 +1,26 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Rsoc7983             -            113 AllatostatinA        -            243   1.1e-10   42.8   8.2   1   1   7.1e-11   9.8e-07   29.9   0.5   149   217    29    90    17    93 0.82 -
+Rsoc36363            -            395 NUCB1                -            567  5.1e-127  426.3  31.3   1   1  2.9e-130  5.9e-127  426.1  31.3     2   372     2   383     1   395 0.88 -
+Rsoc4608             -            409 NUCB1                -            567  7.5e-120  402.7  16.5   1   1  4.5e-123  9.4e-120  402.4  16.5     5   392     5   400     1   408 0.87 -
+Rsoc34079            -            109 NeuropeptideF        -             92   3.1e-14   54.0   0.0   1   1   7.1e-18   3.6e-14   53.8   0.0     4    77    11    85     8    93 0.85 -
+Rsoc8333             -             86 NeuropeptideF        -             92     4e-12   47.2   0.0   1   1   7.8e-16     4e-12   47.2   0.0    27    72    11    62     1    84 0.78 -
+Rsoc17324            -            132 NeuropeptideF        -             92   8.5e-10   39.8   0.0   1   1   3.2e-13   1.6e-09   38.9   0.0     2    70     3    72     2    88 0.78 -
+Rsoc6251             -            129 NeuropeptideF        -             92   1.6e-07   32.5   0.0   1   1   4.5e-11   2.3e-07   32.0   0.0    11    68    11    69     1   102 0.71 -
+Rsoc29739            -            178 OrcokininB           -            325   3.1e-15   57.9   0.6   1   1   7.9e-19   1.6e-14   55.5   0.6   190   290    27   143    20   150 0.50 -
+Rsoc26551            -            167 OrcokininB           -            325   5.5e-11   43.9   1.2   1   1     6e-15   1.2e-10   42.7   0.6   193   290    30   130    22   136 0.49 -
+Rsoc23864            -             95 Phoenixin            -             72   1.6e-14   54.8   0.0   1   1   5.7e-19   2.3e-14   54.3   0.0    11    71    34    93    24    94 0.87 -
+Rsoc13392            -            222 Insulinlikepeptide2  -            137   2.4e-08   35.5   6.0   1   1   3.8e-11     2e-07   32.6   1.1    36   135   133   221   109   222 0.65 -
+Rsoc39311            -            137 Vasopressin          -            137   4.3e-31  108.9  22.6   1   1   2.3e-35   4.8e-31  108.8  22.6     8   133     7   130     1   134 0.89 -
+Rsoc23386            -            144 Vasopressin          -            137   1.8e-29  103.7  22.6   1   1   1.1e-33   2.2e-29  103.4  22.6     4   132     3   129     1   133 0.90 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /home/layg1e23/Documents/GitHub/HMMerMe/Database_hmm/database
+# Target file:     Input_rotifers_priap/Rot_socialis_clean.fasta
+# Option settings: hmmsearch --domtblout RealSpeciesFinals/Rot_socialis/Rot_socialis.hmm_results --noali -E 1e-2 --domE 1e-10 --cpu 2 /home/layg1e23/Documents/GitHub/HMMerMe/Database_hmm/database Input_rotifers_priap/Rot_socialis_clean.fasta 
+# Current dir:     /home/layg1e23/Documents/GitHub/HMMerMe
+# Date:            Thu Mar 21 12:26:55 2024
+# [ok]
