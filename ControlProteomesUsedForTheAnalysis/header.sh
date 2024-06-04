@@ -16,7 +16,7 @@ counter=1
 while read line; do
     # Check if the line starts with ">"
     if [[ $line == ">"* ]]; then
-        echo ">Ofus${counter}"
+        echo ">Dpul${counter}"
         ((counter++))
     else
         echo "$line"
